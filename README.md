@@ -1,2 +1,17 @@
 # assets_source
-assets source: jquery backbone.js bootstrap font-awesome
++ package:
+  jquery 
+  backbone.js
+  font-awesome
+  bootstrap 
++ usage:
+  +install
+   git clone
+   cd to path
+   npm install --registry https://
+   bower update
+  +compile
+   grunt 
+  
+ 
+
