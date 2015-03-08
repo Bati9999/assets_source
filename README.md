@@ -1,20 +1,22 @@
 # assets_source
-+ package:
-
+## package:
   jquery 
   backbone.js
   font-awesome
   bootstrap 
-+ usage:
-
-  +install
-  
+## usage:
+  ### nodejs isntall
+  ### grunt install
+    npm -g install grunt-cli
+  ###  install
    git clone
    cd to path
-   npm install --registry https://
-   bower update
-  compile
-   grunt 
+   ``npm install --registry=https://registry.npm.taobao.org
+   bower install
+  ### compile
+   grunt dist    
+   grunt debug (no minify)
+   grunt default=dist
   
  
 

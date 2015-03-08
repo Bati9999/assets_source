@@ -1,0 +1,32 @@
+﻿{
+  "name": "818cad.com",
+  "description": "my static files package: bootstrap(no g_font)+font_awesome+jquery.",
+  "version": "0.1.0",
+  "author": "bati9999",
+  
+  
+  "devDependencies": {
+    "btoa": "~1.1.2",
+    "glob": "~4.3.5",
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "~2.1.0",
+    "grunt-banner": "~0.3.1",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-compress": "~0.13.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-contrib-cssmin": "~0.11.0",
+    "grunt-contrib-less": "~1.0.0",
+    "grunt-contrib-uglify": "~0.7.0",
+    "grunt-exec": "~0.4.6",
+    "grunt-jscs": "~1.2.0",
+    "grunt-saucelabs": "~8.4.1",
+    "load-grunt-tasks": "~2.0.0",
+	"time-grunt": "~1.0.0"
+  },
+  
+  "engines": {
+    "node": "~0.10.1"
+  }
+  
+} 

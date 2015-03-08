@@ -1,0 +1,30 @@
+{
+  "name": "bw",
+  "version": "0.1.0",
+  "authors": [
+    "Bati9999 <bati9999@sina.com>"
+  ],
+  "description": "django",
+  "main": "style.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "django"
+  ],
+  "license": "MIT",
+  "homepage": "818cad.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.2",
+    "bootstrap": "3.3.2",
+    "font-awesome": "4.3.0",
+    "backbone": "~1.1.2"
+  }
+}

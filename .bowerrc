@@ -1,0 +1,5 @@
+{
+  "directory": "third_lib/",
+  "analytics": false,
+  "timeout": 120000
+}
