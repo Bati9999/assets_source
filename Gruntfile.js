@@ -52,13 +52,7 @@ module.exports = function (grunt) {
 		  'third_lib/backbone/backbone.js'
         ],
         dest: 'assets/js/third.js'
-      },
-	  common: {
-	    src: [
-		  'js/common.js'
-		],
-		dest: 'assets/js/common.js'
-	  }
+      }
 	},
 	
 	
@@ -149,8 +143,8 @@ module.exports = function (grunt) {
 
   
   // JS distribution task.
-  grunt.registerTask('dist-js', ['concat:third', 'concat:common','uglify:third','uglify:common']);
-  grunt.registerTask('debug-js', ['concat:third', 'concat:common']);
+  grunt.registerTask('dist-js', ['concat:third','uglify:third']);
+  grunt.registerTask('debug-js', ['concat:third']);
   
 
   // CSS distribution task.

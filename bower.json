@@ -4,16 +4,16 @@
   "authors": [
     "Bati9999 <bati9999@sina.com>"
   ],
-  "description": "django",
+  "description": "my site",
   "main": "style.css",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "django"
+    "mysite"
   ],
   "license": "MIT",
-  "homepage": "818cad.com",
+  "homepage": "bati.com",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -22,9 +22,9 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.11.2",
-    "bootstrap": "3.3.2",
-    "font-awesome": "4.3.0",
-    "backbone": "~1.1.2"
+    "jquery": "1.11.3",
+    "bootstrap": "3.3.6",
+    "font-awesome": "4.3.0"
+    
   }
 }
