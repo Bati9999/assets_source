@@ -14,16 +14,16 @@ module.exports = function (grunt) {
  
   // Project configuration.
   grunt.initConfig({
-
+     
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
             ' * bati9999 copyright' +
             ' */\n',
-    
+    dest_dir: '../meboxp/assets/common',
     // Task configuration.
     clean: {
-      assets: 'assets'      
+      assets: '<%= dest_dir %>'      
     },
 
     
@@ -47,11 +47,10 @@ module.exports = function (grunt) {
           'third_lib/bootstrap/js/popover.js',
           'third_lib/bootstrap/js/scrollspy.js',
           'third_lib/bootstrap/js/tab.js',
-          'third_lib/bootstrap/js/affix.js',
-		  'third_lib/underscore/underscore.js',
-		  'third_lib/backbone/backbone.js'
+          'third_lib/bootstrap/js/affix.js'
+		  
         ],
-        dest: 'assets/js/third.js'
+        dest: '<%= dest_dir %>/js/third.js'
       }
 	},
 	
@@ -62,12 +61,9 @@ module.exports = function (grunt) {
       },
       third: {
         src: '<%= concat.third.dest %>',
-        dest: 'assets/js/third.min.js'
-      },
-	  common:{
-	    src: '<%= concat.common.dest %>',
-        dest: 'assets/js/common.min.js'
-	  }
+        dest: '<%= dest_dir %>/js/third.min.js'
+      }
+	 
     },
 
     
@@ -78,10 +74,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: 'style.css.map',
-          sourceMapFilename: 'assets/css/style.css.map'
+          sourceMapFilename: '<%= dest_dir %>/css/style.css.map'
         },
         src: 'less/style.less',
-        dest: 'assets/css/style.css'
+        dest: '<%= dest_dir %>/css/style.css'
       }
     },
 
@@ -102,7 +98,7 @@ module.exports = function (grunt) {
         options: {
           map: true
         },
-        src: 'assets/css/style.css'
+        src: '<%= dest_dir %>/css/style.css'
       }
     },
 
@@ -113,8 +109,8 @@ module.exports = function (grunt) {
         advanced: false
       },
       minifyCore: {
-        src: 'assets/css/style.css',
-        dest: 'assets/css/style.min.css'
+        src: '<%= dest_dir %>/css/style.css',
+        dest: '<%= dest_dir %>/css/style.min.css'
       }
     },
 
@@ -123,14 +119,14 @@ module.exports = function (grunt) {
 	    expand:    true,
         cwd: 'third_lib/font-awesome/fonts/',
 		src: '**',
-        dest: 'assets/fonts/',
+        dest: '<%= dest_dir %>/fonts/',
 		//filter: 'isFile'
       },
 	  images: {
 	    expand: true,
 	    cwd: 'images/',
         src: '**',
-        dest: 'assets/images/',
+        dest: '<%= dest_dir %>/images/',
 		//filter: 'isFile'
       }
 	}   
